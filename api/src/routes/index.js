@@ -79,7 +79,7 @@ router.get("/tipo", async (req, res) => {
   let getTipoApi = await axios.get("https://pokeapi.co/api/v2/type");
   // console.log(getTipoApi)
   let getAllTipo = getTipoApi.data.results.map((e) => e.name); // me traigo los tipos y los mapeo
-  console.log(getAllTipo)
+  // console.log(getAllTipo)
   getAllTipo.forEach((e) => { // a cada tipo le digo encontralo o crealo
     Tipo.findOrCreate({
       where: { name: e },
@@ -89,16 +89,7 @@ router.get("/tipo", async (req, res) => {
   return res.send(allTipo);
 });
 
-router.delete('/pokemon/delete/:id', async (req,res) => {
-    let {id} = req.params
 
-    try {
-        await Pokemon.destroy({where:{id:id}}) // elimino por id
-        res.send('Pokemon eliminado')
-    } catch (error) {
-        console.log(error)
-    }
-})
 
 
 

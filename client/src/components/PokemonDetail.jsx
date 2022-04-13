@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import Loading from "./Loading";
 import styles from './PokemonDetail.module.css'
+
 export default function PokemonDetail() {
   const {id} = useParams()
   const dispatch = useDispatch()

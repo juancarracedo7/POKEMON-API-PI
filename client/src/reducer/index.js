@@ -9,7 +9,7 @@ import {
   GET_POKE_NAME,
   POST_POKEMON,
   GET_DETAILS,
-  CLEAR_ID
+  CLEAR_ID,
 } from "../actions";
 
 const initialState = {
@@ -110,7 +110,8 @@ function rootReducer(state = initialState, action) {
                         return{
                                 ...state,
                                 detail:[]
-                        }               
+                        }     
+                       
                 
 
     default:

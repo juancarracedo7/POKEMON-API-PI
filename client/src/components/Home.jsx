@@ -9,6 +9,7 @@ import SearchBar from "./SearchBar";
 import styles from './Home.module.css'
 import LoadingHome from "./LoadingHome";
 
+
 export default function Home(){
   const dispatch = useDispatch();
   const allpoke = useSelector((state) => state.pokemons);
@@ -84,6 +85,7 @@ export default function Home(){
       <h1 className={styles.h1}>ARE YOU READY?</h1>
       <button onClick={(e) => handleClick(e)} className={styles.reload}>Reload</button>
       <div>
+       
         <SearchBar></SearchBar>
         <Link to='/pokemon' className={styles.link} ><h2>Create Pokemon</h2></Link>
       </div>
@@ -123,7 +125,7 @@ export default function Home(){
         
         <Paginado
           pokePage={pokePage}
-          allPoke={allpoke.length}
+          allPoke={allpoke.length} // necesito un valor numerico
           paginadoPoke={paginadoPoke}
         />
           

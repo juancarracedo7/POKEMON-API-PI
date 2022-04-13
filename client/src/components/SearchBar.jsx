@@ -23,8 +23,7 @@ export default function SearchBar(){
     return (
         <div>
             <input className={styles.text} type="text" placeholder="Search" onChange={e => handleInput(e)} />
-            <button className={styles.button} type='submit' onClick={e => handleSubmit(e)}  >Search</button>
-
+            <button className={styles.button} type='submit' onClick={e => handleSubmit(e)}>Search</button>
         </div>
     )
 

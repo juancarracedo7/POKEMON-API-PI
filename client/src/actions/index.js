@@ -10,6 +10,7 @@ export const POST_POKEMON = 'POST_POKEMON'
 export const GET_DETAILS = 'GET_DETAILS'
 export const CLEAR_ID = 'CLEAR_ID'
 
+
 export function getAllPoke() {
     return async (dispatch) => {
         var json = await axios.get("http://localhost:3001/pokemon");
@@ -57,7 +58,7 @@ export const getPokeName = (name)=> async dispatch=>{
 }
 
 export function postPokemon(payload) {
-    // console.log(payload)
+    console.log('payload',payload)
     return async function (dispatch) {
         var json = await axios.post("http://localhost:3001/pokemon", payload)
        
@@ -113,3 +114,4 @@ export function clearId(){
         type:CLEAR_ID
     }
 }
+

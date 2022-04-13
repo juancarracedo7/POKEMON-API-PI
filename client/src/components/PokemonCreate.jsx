@@ -38,7 +38,7 @@ export default function PokemonCreate (){
     function handleSelect(e){
         setInput({
             ...input,
-            types:[...input.types,e.target.value]// puede tener mas de 1 por eso primero
+            types:[...input.types,e.target.value]// puede tener mas de 1 type
         })
     }
 
