@@ -13,8 +13,8 @@ const { Pokemon, Tipo } = require("../db");
 
 router.get("/pokemon", async (req, res) => {
   const { name } = req.query; // destructuro nombre de req.query
-  let allPoke = await getAllPoke(); // llamo a todos los poke d api y db
   try{
+  let allPoke = await getAllPoke(); // llamo a todos los poke d api y db
   if (name) {
     // si tengo nombre por query
     let pokeName = await allPoke.filter((e) =>
@@ -41,7 +41,7 @@ router.get("/pokemon/:id", async (req, res) => {
   
   if (id) {
       try{
-    let pokeId = await allPoke.filter((e) => e.id == id);
+    let pokeId = await allPoke.filter((e) => e.id.toLowerCase() == id.toLowerCase());
     if (pokeId.length) {
       res.status(200).send(pokeId);
     } else {

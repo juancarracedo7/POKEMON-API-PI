@@ -131,9 +131,9 @@ export default function Home(){
           
         {actualPoke?.map((e) => {
           return (
-            <div key={e.id}>
+            <div className={styles.cards} key={e.id}>
               <Link to={`/pokemon/${e.id}`} className={styles.link}>
-               <Card image={e.img} name={e.name} types={e.types} />
+               <Card  image={e.img} name={e.name} types={e.types} />
               </Link>
               
             </div>

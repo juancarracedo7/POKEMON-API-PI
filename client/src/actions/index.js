@@ -49,12 +49,17 @@ export function getAllTypes() {
 
 // }
 export const getPokeName = (name)=> async dispatch=>{
-    const response = await fetch(`http://localhost:3001/pokemon?name=${name}`)
-    const json = await response.json()
-    return dispatch({
-        type: GET_POKE_NAME,
-        payload: json
-    })
+    try {
+        const response = await fetch(`http://localhost:3001/pokemon?name=${name}`)
+        const json = await response.json()
+        return dispatch({
+            type: GET_POKE_NAME,
+            payload: json
+        })
+    } catch (error) {
+        console.log(error)
+    }
+  
 }
 
 export function postPokemon(payload) {

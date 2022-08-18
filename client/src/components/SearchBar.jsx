@@ -11,12 +11,12 @@ export default function SearchBar(){
 
     function handleInput(e){
       e.preventDefault();
-      setName(e.target.value); // guardo el imput
+      setName(e.target.value); // guardo el imput, lo que tipea el usuario
     }
 
     function handleSubmit(e){
         e.preventDefault()
-        dispatch(getPokeName(name)) // el name hace referencia a mi estado local
+        dispatch(getPokeName(name)) // el name hace referencia a mi estado local, 
         setName('')
     }
 

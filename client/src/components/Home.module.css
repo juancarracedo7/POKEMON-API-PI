@@ -24,12 +24,7 @@
   text-decoration: none;
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-}
+
 
 .link {
   text-decoration: none;
