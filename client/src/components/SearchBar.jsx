@@ -16,7 +16,12 @@ export default function SearchBar(){
 
     function handleSubmit(e){
         e.preventDefault()
-        dispatch(getPokeName(name)) // el name hace referencia a mi estado local, 
+        if (!name){
+            alert('ingresa un pokemon ')
+        } else {
+
+            dispatch(getPokeName(name)) // el name hace referencia a mi estado local, 
+        }
         setName('')
     }
 

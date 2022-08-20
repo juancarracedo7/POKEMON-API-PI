@@ -17,6 +17,7 @@ const initialState = {
   allPokemons: [],
   types: [],
   detail:[],
+  create:[]
 };
 
 function rootReducer(state = initialState, action) {
@@ -49,9 +50,13 @@ function rootReducer(state = initialState, action) {
         action.payload === "createdInDb"
           ? allPokemon.filter((e) => e.createdInDb)
           : allPokemon.filter((e) => !e.createdInDb);
+
+          const Db =  action.payload === "createdInDb"
+          ? allPokemon.filter((e) => e.createdInDb) : ''
       return {
         ...state,
         pokemons: action.payload === "All" ? allPokemon : pokefilter,
+        create: Db
       };
     case ORDER_AZ:
       const allpoke1 = state.allPokemons;

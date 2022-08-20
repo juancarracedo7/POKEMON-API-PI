@@ -5,7 +5,7 @@
     border: 2px solid rgba(183, 18, 18, 0.781);
     border-radius: 5px;
     width: 80px;
-    height:25px;
+    height:37px;
 }
 
 .button:hover {
@@ -19,7 +19,7 @@
     color:rgba(8, 8, 8, 0.781);
     border-radius: 5px;
     border: 2px solid rgba(176, 22, 22, 0.781);
-    width: 200px;
-    height:20px;
+    width: 250px;
+    height:30px;
     margin-right:10px
 }

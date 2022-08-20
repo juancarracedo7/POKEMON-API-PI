@@ -109,8 +109,9 @@ return (
     <h2>CREATE YOUR POKEMON!</h2>
     <form onSubmit={(e) => handleSubmit(e)} className={styles.form}>
       <div className={styles.detail}>
-        <label>Name:</label>
+        <label className={styles.label}>Name:</label>
         <input
+         className={styles.input}
           type="text"
           value={input.value}
           name="name"
@@ -122,8 +123,9 @@ return (
         )}
       </div>
       <div className={styles.detail}>
-        <label >Hp:</label>
+        <label className={styles.label} >Hp:</label>
         <input
+        className={styles.input}
           type="text"
           value={input.value}
           name="hp"
@@ -136,8 +138,9 @@ return (
       </div>
 
       <div className={styles.detail}>
-        <label>Attack:</label>
+        <label className={styles.label}>Attack:</label>
         <input
+         className={styles.input}
           type="text"
           value={input.value}
           name="attack"
@@ -150,8 +153,9 @@ return (
       </div>
 
       <div className={styles.detail}>
-        <label>Defense:</label>
+        <label className={styles.label}>Defense:</label>
         <input
+        className={styles.input}
           type="text"
           value={input.value}
           name="defense"
@@ -164,8 +168,9 @@ return (
       </div>
 
       <div className={styles.detail}>
-        <label>Weight:</label>
+        <label className={styles.label}>Weight:</label>
         <input
+      className={styles.input}
           type="text"
           value={input.value}
           name="weight"
@@ -178,8 +183,9 @@ return (
       </div>
 
       <div className={styles.detail}>
-        <label>Height:</label>
+        <label className={styles.label}>Height:</label>
         <input
+        className={styles.input}
           type="text"
           value={input.value}
           name="height"
@@ -192,8 +198,10 @@ return (
       </div>
 
       <div className={styles.detail}>
-        <label>Image:</label>
+        <label className={styles.label}>Image:</label>
+        
         <input
+         className={styles.input}
           type="text"
           value={input.value}
           name="img"

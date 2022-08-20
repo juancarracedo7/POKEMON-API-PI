@@ -8,24 +8,14 @@
     justify-content: space-around;
 }
 
-.button{
-     
-        color:rgb(13, 13, 13);
-        height: 150px;
-        width: 150px;
-        background-color: #f9faf9;
-        border-radius: 100px;
-        font-weight: 400;
-        font-size: 30px;
-       
-    
+.img {
+    width: 100px;
+    height: 100px;
 }
 
-.button:hover{
-    cursor: pointer;
-    background-color:#df091f ;
-    font-weight: 1200;
-    font-size: 40px;
+.img:hover {
+    width: 200px;
+    height: 200px;
 }
 
 .h1{  font-size: 50px;

@@ -1,6 +1,6 @@
 .h1{
     font-size: 50px;
-    color: rgba(14, 2, 81, 0.59);
+    color: rgba(222, 220, 235, 0.59);
 }
 
 .loading{
@@ -8,11 +8,12 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: rgb(10, 10, 11);
 
 }
 .img{
-height: 200px;
-width: 250px;
+height: 750px;
+width: 750px;
 
 
 }

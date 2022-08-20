@@ -12,6 +12,7 @@ import LoadingHome from "./LoadingHome";
 
 export default function Home(){
   const dispatch = useDispatch();
+  const DbPoke = useSelector((state) => state.create)
   const allpoke = useSelector((state) => state.pokemons);
   console.log('pokemones',allpoke)
   const allTypes= useSelector((state) => state.types)
@@ -53,6 +54,7 @@ export default function Home(){
 
   function handleCreated(e){
     e.preventDefault(e);
+    
     dispatch(filteredBycreate(e.target.value));
     setActualPage(1)
     setCreated(e.target.value)
@@ -118,29 +120,35 @@ export default function Home(){
               </option>
               
             ))}
-            
-
-          
         </select>
-        
+        </div>
+        <div>
         <Paginado
           pokePage={pokePage}
           allPoke={allpoke.length} // necesito un valor numerico
           paginadoPoke={paginadoPoke}
         />
-          
+        </div>
+        
+          <div className={styles.cardColumn} >
         {actualPoke?.map((e) => {
           return (
-            <div className={styles.cards} key={e.id}>
+            
               <Link to={`/pokemon/${e.id}`} className={styles.link}>
-               <Card  image={e.img} name={e.name} types={e.types} />
+               <Card  key={e.id}  image={e.img} name={e.name} types={e.types} />
               </Link>
-              
-            </div>
           );
         })}
+        </div>
+        <div>
+        <Paginado
+          pokePage={pokePage}
+          allPoke={allpoke.length} // necesito un valor numerico
+          paginadoPoke={paginadoPoke}
+        />
+        </div>
       </div>
-    </div>
+    
   );
       }
 }

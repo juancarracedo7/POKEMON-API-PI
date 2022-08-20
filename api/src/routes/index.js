@@ -41,7 +41,7 @@ router.get("/pokemon/:id", async (req, res) => {
   
   if (id) {
       try{
-    let pokeId = await allPoke.filter((e) => e.id.toLowerCase() == id.toLowerCase());
+    let pokeId = await allPoke.filter((e) => e.id == id);
     if (pokeId.length) {
       res.status(200).send(pokeId);
     } else {
