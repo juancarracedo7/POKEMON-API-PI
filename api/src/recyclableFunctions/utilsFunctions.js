@@ -6,7 +6,7 @@ const { Pokemon, Tipo } = require('../db')
 
 async function getPokeApi (){
     try {
-        let callApi = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=48') // llamado api
+        let callApi = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=60') // llamado api
         // console.log('todo de la api',callApi.data.results)
         let subCallApi = callApi.data.results.map(e => axios.get (e.url)) // obtengo todas url segundo llamado
         // console.log('url todos los pokes', subCallApi)
@@ -23,7 +23,7 @@ async function getPokeApi (){
                 height: e.data.height,
                 weight: e.data.weight,
                 img: e.data.sprites.front_default,
-                types: e.data.types.map(e => e.type.name),
+                types: e.data.types.map(e => e.type.name) ,
                 createdInDataBase: false,
             }
         })

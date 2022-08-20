@@ -74,13 +74,7 @@ export default function Home(){
     setAttack(e.target.value)
   }
 
-  if(allpoke.length === 0){
-    return(
-        <div>
-        <LoadingHome />
-        </div>
-    ) 
- }else{
+ 
   
   return (
     <div className={styles.home}>
@@ -116,7 +110,7 @@ export default function Home(){
           {allTypes &&
             allTypes.map((t) => (
               <option  value={t.name} key={t.name}>
-                {t.name}
+                {t.name} 
               </option>
               
             ))}
@@ -130,7 +124,9 @@ export default function Home(){
         />
         </div>
         
-          <div className={styles.cardColumn} >
+         { allpoke && allpoke.length === 0 ? <div>
+        <LoadingHome />
+        </div> : <div className={styles.cardColumn} >
         {actualPoke?.map((e) => {
           return (
             
@@ -139,7 +135,7 @@ export default function Home(){
               </Link>
           );
         })}
-        </div>
+        </div>}
         <div>
         <Paginado
           pokePage={pokePage}
@@ -152,4 +148,4 @@ export default function Home(){
   );
       }
 
-    }
+    

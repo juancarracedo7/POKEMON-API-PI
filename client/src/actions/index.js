@@ -77,7 +77,13 @@ export function postPokemon(payload) {
 
 export const filteredByTypes = (payload) => {
     // console.log('payload',payload)
-    return { type: FILTER_TYPES, payload };
+    try {
+        return { type: FILTER_TYPES, payload };
+    } catch (error) {
+        console.log(error)
+        alert('Type not found')
+    }
+    
 }
 
 export const filteredBycreate = (payload) => {

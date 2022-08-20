@@ -1,6 +1,6 @@
 .h1{
     font-size: 50px;
-    color: rgba(222, 220, 235, 0.59);
+    color: rgba(21, 20, 28, 0.59);
 }
 
 .loading{
@@ -8,9 +8,10 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: rgb(10, 10, 11);
+  background-color: transparent;
   height: 100vh;
   width: 100vw;
+  border-radius: 1000px;
 
 }
 .img{
@@ -20,5 +21,5 @@ width: 500px;
 
 .link {
   text-decoration: none;
-  color: rgba(222, 220, 235, 0.59);
+  color: rgba(17, 16, 23, 0.59);
 }
