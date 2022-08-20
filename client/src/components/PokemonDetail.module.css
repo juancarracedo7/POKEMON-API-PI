@@ -6,7 +6,11 @@
     margin: 0px;
     display: block;
     margin-top: -35px;
-    
+
+background-repeat: no-repeat;
+/* background-position: center center; */
+background-size: cover;
+background-attachment: fixed;
 }
 
 .button {
@@ -33,11 +37,22 @@
     color: rgba(49, 46, 46, 0.8);
     text-decoration: none;
     margin: 0px;  
-    border: #c2128a;  
+    border: 5px solid #272326;  
+    width: 450px;
+    border-radius: 1000px;
+    margin-top: 5px;
+}
+
+.divCenter {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .img{
-    height: 250px;
+    height: 230px;
 }
 
 .h4{
