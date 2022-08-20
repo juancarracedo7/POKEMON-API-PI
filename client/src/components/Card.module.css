@@ -1,9 +1,9 @@
 .card{
-   background: linear-gradient(100deg, rgba(213, 24, 24, 0.8) 50%, rgba(224, 191, 191, 0.974) 50%); 
+   background: linear-gradient(100deg, rgba(49, 46, 46, 0.8) 50%, rgba(224, 191, 191, 0.9) 50%); 
     border-radius: 100px;
     margin: 30px;
     height: 400px;
-    width: 400px;
+    width: 300px;
     font-size: 25px; 
     color:rgb(236, 236, 236);
     text-decoration: none;

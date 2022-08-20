@@ -9,11 +9,16 @@
   align-items: center;
   text-align: center;
   background-color: rgb(10, 10, 11);
+  height: 100vh;
+  width: 100vw;
 
 }
 .img{
-height: 750px;
-width: 750px;
+height: 500px;
+width: 500px;
+}
 
-
+.link {
+  text-decoration: none;
+  color: rgba(222, 220, 235, 0.59);
 }

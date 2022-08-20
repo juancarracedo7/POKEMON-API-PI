@@ -31,10 +31,10 @@ export default function PokemonDetail() {
                   <p className={styles.p}>Weight {detailPokemon[0].weight}</p>
                   <p className={styles.p}>Height {detailPokemon[0].height}</p>
                   <h4 className={styles.h4}>{!detailPokemon[0].createdInDb ? detailPokemon[0].types.map(el=> el + "  " ) : detailPokemon[0].tipos.map(el => el.name + "   ")}</h4>
+                  <Link to='/home'><button className={styles.button}>Go Back Home</button></Link>
                   
               </div> : <Loading></Loading>
           }
-          <Link to='/home'><button className={styles.button}>Go Back Home</button></Link>
       </div>
   )
 }

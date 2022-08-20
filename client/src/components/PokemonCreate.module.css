@@ -1,114 +1,119 @@
-.divCreate{
-
+.divCreate {
+    background-image: url('https://i0.wp.com/cdn.clickwallpapers.net/images/clickwallpapers-pokemon-4k-img9.jpg?w=958&ssl=1');
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #d3f05ebe;
     height: 100vh
-    }
-    
-    .button {
-        color:white;
-        height: 100px;
-        width: 100px;
-        background-color: #a43081;
-        border-radius: 47px;
-        border: 10px solid transparent;
-        border-color: #f00aa79e;
-        font-weight: 200;
-        font-size: 14px;
-        margin: 50%;
-        
-    }
-    
-    .button:hover{
-        cursor: pointer;
-        border-color: #9f14149e;
-        font-weight: 200;
-        font-size:15px;
-      
-    }
+}
 
-    .button2 {
-        color:white;
-        height: 50px;
-        width: 50px;
-        background-color: #a4146d;
-        border-radius: 15px;
-        font-size: 20px;
-    }
-    
-    
-    .detail{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 200px;
-        height: 100px;
-    }
-    
-    
-    .form  {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-row-gap: 30px;
-        grid-column-gap: 0px;
-        justify-items: center;
-        height: 700px;
-    }
-    
-    .select{
-    
-        color:white;
-        background-color: #d9dc35;
-        border-color: #b5dc35;
-        font-weight: 200;
-        font-size: large;
-        display: flex;
-        align-items: center;
-        text-align: center;
+.button {
+    color: white;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(49, 46, 46, 0.8);
+    border-radius: 47px;
+    border: 10px solid transparent;
+    border-color: rgba(49, 46, 46, 0.8);
+    font-weight: 200;
+    font-size: 14px;
+    margin: 50%;
 
-    
-    }   
-        .select:hover{
-            cursor: pointer;
-            background-color: hsl(76, 62%, 62%);
-            font-weight: 200;
-            font-size: large;
-        }
-    
-       .create {
-            color: rgb(255, 255, 255);
-            background-color: cornflowerblue;
-            border: 1px solid transparent;
-            font-family: inherit;
-            font-size: large;
-            cursor: pointer;
-            font-size: 28px;
-        }
-        .create:hover{
-            cursor: pointer;
-            background-color: rgb(136, 171, 236);
-       
-        }
+}
 
-        .li{
-            list-style: none;
-        }
-    
-        .danger{
-            color: #f02849;
-            font-weight: bold;
-        
-        }
+.button:hover {
+    cursor: pointer;
+    border-color: #2c26269e;
+    font-weight: 200;
+    font-size: 15px;
 
-        .input {
-            height: 25px;
-            width: 300px;
-        }
+}
 
-        .label {
-            display: flex;
-            text-align: center;
-        }
+.button2 {
+    color: white;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(49, 46, 46, 0.8);
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+}
+
+
+.form {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 0px;
+    justify-items: center;
+    height: 700px;
+}
+
+.select {
+
+    color: white;
+    background-color: rgba(49, 46, 46, 0.8);
+    border-color: rgba(49, 46, 46, 0.8);
+    font-weight: 200;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.select:hover {
+    cursor: pointer;
+    background-color:rgba(49, 46, 46, 0.8);
+    font-weight: 200;
+    font-size: large;
+}
+
+.create {
+    color: rgb(255, 255, 255);
+    background-color: cornflowerblue;
+    border: 1px solid transparent;
+    font-family: inherit;
+    font-size: large;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.create:hover {
+    cursor: pointer;
+    background-color: rgb(136, 171, 236);
+
+}
+
+.li {
+    list-style: none;
+}
+
+.danger {
+    color: #f02849;
+    font-weight: bold;
+
+}
+
+.input {
+    height: 25px;
+    width: 300px;
+}
+
+.label {
+    display: flex;
+    text-align: center;
+}

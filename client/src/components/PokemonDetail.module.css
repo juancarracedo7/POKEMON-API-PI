@@ -13,35 +13,36 @@
     color:rgb(15, 2, 2);
     height: 100px;
     width: 100px;
-    background-color: #914274;
+    background-color: rgba(49, 46, 46, 0.8);
     border-radius: 100px;
     border: 10px solid transparent;
-    border-color: #de7fdc;
+    border-color:rgba(49, 46, 46, 0.8);
     font-size: 20px;
     margin: 15px;
 }
 
 .button:hover{
     cursor: pointer;
-    background-color: #c2128a;
+    background-color:rgba(224, 191, 191, 0.9);
    
   
 }
 
 .p{
     font-size: 30px;
-    color: #de0950b6;
+    color: rgba(49, 46, 46, 0.8);
     text-decoration: none;
-    margin: 0px;    
+    margin: 0px;  
+    border: #c2128a;  
 }
 
 .img{
-    height: 200px;
+    height: 250px;
 }
 
 .h4{
     font-size: 30px;
-    color: #f117a1;
+    color: rgba(49, 46, 46, 0.8);
     text-decoration: none;
     
 }

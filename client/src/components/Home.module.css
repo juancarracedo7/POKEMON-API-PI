@@ -1,7 +1,9 @@
 .home {
-  background-color:
-    rgba(212, 109, 109, 0.8);;
-  background-size: 100vw 100vh;
+  background-image: url('https://i0.wp.com/cdn.clickwallpapers.net/images/clickwallpapers-pokemon-4k-img9.jpg?w=958&ssl=1');
+background-repeat: no-repeat;
+/* background-position: center center; */
+background-size: cover;
+background-attachment: fixed;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -12,7 +14,7 @@
 .h1 {
   font-size: 50px;
   text-align: center;
-  text-shadow: -4px 3px 0 #e6e7d8, -14px 7px 0 #ea0853;
+  text-shadow: -4px 3px 0 #e6e7d8, -14px 7px 0 rgba(224, 191, 191, 0.9);
 }
 
 .h2 {
@@ -30,19 +32,19 @@
 
 .link {
   text-decoration: none;
+  color: rgba(49, 46, 46, 0.8);
 }
 
 .reload {
   cursor: pointer;
   font-size: 15px;
-  color: #ffffff;
-  text-shadow: rgb(201, 72, 72) 0px 0px 5px, rgb(208, 97, 97) 0px 0px 10px,
-    #fff 0px 0px 15px, #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px,
-    #ff2d95 0px 0px 40px, #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
+  color:rgba(49, 46, 46, 0.8);
+  background-color: rgba(49, 46, 46, 0.8);
+  
 }
 
 .select {
-  background: rgb(199, 110, 110);
+  background:rgba(224, 191, 191, 0.9);
   font-size: 14px;
   height: 30px;
   padding: 5px;
